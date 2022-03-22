@@ -6,4 +6,12 @@ site = Blueprint("site", __name__, url_prefix="/")
 def home():
     return render_template("home.html")
 
-    
+@site.route("/estadisticas.html")
+def Curiosidades():
+    return render_template("estadisticas.html")
+
+@site.route("/contacto.html")
+def contacto():
+    return render_template("contacto.htmL")
+
+        

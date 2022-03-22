@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body{
+    font-family: 'Bebas Neue', cursive; 
+}
+
+.contenedor{
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.carta { 
+    width: 300px;
+    height: 590px;
+    color: aliceblue;
+    background-color: rgb(43, 135, 197);
+    border-radius: 10px;
+    margin: 1.5em;
+}
+
+.carta-img1 {
+    width: 100%;
+    height: 250px;
+    background-image: url(./tallePalacios.jpeg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.carta-img2 {
+    width: 100%;
+    height: 250px;
+    background-image: url(./interact.jpeg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.carta-img4 {
+    width: 100%;
+    height: 250px;
+    background-image: url(./proyecto-vida.jpeg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.carta-titulo {
+    padding: 20px;
+    font-size: 1.25em;
+    margin-left: 4px;
+}
+.carta-proyectos-link{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carta-proyectos-link a{ 
+    color: aliceblue;
+    text-decoration: none;
+}
+.carta-proyectos-link i{
+    font-size: 1.5em;
+}
+
+.carta .detalles-proyecto{
+    margin: 0 auto;
+    margin: len;
+    width: 70%;
+}
+
+.carta .detalles-proyecto a{
+    text-decoration: none;
+    color: rgb( 19, 22, 41);
+    text-transform: uppercase;
+}
+
+.detalles-proyecto-contenido{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}

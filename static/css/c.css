@@ -1,8 +1,248 @@
-.contenedor figure {
-    position: absolute;
-	top: 0;
-	left: 50px; /* width of visible piece */
-	width: 335px;
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.6);
-    transition: all 0.3s ease-in-out;
+body{
+	background-color: lightgrey;
+	font-family: sans-serif;
 }
+  
+.container{
+	margin: auto;
+	background-color: white;
+	width: 800px;
+	padding: 30px;
+}
+  
+ul, li {
+    padding: 0;
+	margin: 0;
+	list-style: none;
+}
+  
+ul.slider{
+	position: relative;
+	width: 800px;
+	height: 300px;
+}
+  
+ul.slider li {
+    position: absolute;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+	width: inherit;
+	height: inherit;
+	transition: opacity .5s;
+	background:#fff;
+}
+  
+  ul.slider li img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+  
+.container input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 600px; /* just cover visible part */
+	height: 100%;
+	cursor: pointer;
+	border: 0;
+	padding: 0;
+    opacity: 0;
+	z-index: 100;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.container input:checked{
+	width: 5px;
+	left: auto;
+	right: 0px;
+}
+.container input:checked ~ figure {
+    left: 335px;
+    transition: all 0.7s ease-in-out;
+}
+
+.container figcaption {
+	width: 100%;
+	height: 100%;
+	background: rgba(87, 73, 81, 0.1);
+	position: absolute;
+	top: 0px;
+    transition: all 0.2s linear;
+}
+
+.container figcaption span {
+	position: absolute;
+	top: 40%;
+	margin-top: -30px;
+	right: 20px;
+	left: 20px;
+	overflow: hidden;
+	text-align: center;
+	background: rgba(87, 73, 81, 0.3);
+	line-height: 20px;
+	font-size: 18px;
+    opacity: 0;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 700;
+	padding: 20px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+} 
+
+.container input:checked + figcaption,
+.container input:checked:hover + figcaption{
+	background: rgba(87, 73, 81, 0);
+}
+
+.container input:checked + figcaption span {
+    transition: all 0.4s ease-in-out 0.5s;
+	opacity: 1;
+	top: 50%;
+}
+
+.container #ultimo:checked + figcaption span {
+	transition-delay: 0.3s;
+}
+
+.container input:hover + figcaption {
+	background: rgba(87, 73, 81, 0.03);
+}
+
+.container input:checked ~ figure input{
+    z-index: 1;
+}
+  
+  ul.slider li:first-child {
+	  opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+	  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+	text-align: center;
+	margin: 20px;
+  }
+  
+  .menu li{
+	display: inline-block;
+	text-align: center;
+  }
+  
+  .menu li a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	background-color: grey;
+	padding: 10px;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	border-radius: 100%;
+  }
+
+
+
+
+
+
+  <ul class="menu">
+  <li>
+    <a href="#slide1">1</a>
+  </li>
+  <li>
+    <a href="#slide2">2</a>
+  </li>
+   <li>
+    <a href="#slidetre">3</a>
+  </li>
+  <li>
+    <a href="#slide4">4</a>
+  </li>
+  <li>
+    <a href="#slide5">5</a>
+  </li>
+  <li>
+    <a href="#slide6">6</a>
+  </li>
+  <li>
+    <a href="#slide7">7</a>
+  </li>
+</ul>
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="css\estilo-1.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+</head>
+    <body>
+        <div class="contenedor">
+            <div class="carta">
+                <div class="carta-img1">    
+                </div>
+                <div class="carta-titulo">
+                    <h2>Rediseño de servicios</h2>
+                    <p>Rediseño total de servicio en línea del taller palacios, un proyecto que dio una gran facilidad al usuario de enterarse nuevas noticias, contacto directo y facilidad de comunicación con el taller con un tracking del mantenimiento.</p>
+                </div>
+                <div class="carta-proyectos-link">
+               
+                </div>
+                <div class="detalles-proyecto-contenido">
+                    <button class="detalles-proyecto descargar-cv">
+                        <a href="https://www.canva.com/design/DAEv2SAOR_Q/wfzyPZO82ghz9AEclw8iPQ/view?utm_content=DAEv2SAOR_Q&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton%27%22%3E">
+                            Detalles de Proyecto 
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="carta">
+                <div class="carta-img2">    
+                </div>
+                <div class="carta-titulo">
+                    <h2>Integrante de Rotary</h2>
+                    <p>Integrante de Interact-ElectiSur durante 3 años, creando y participando en distintos proyectos de voluntariado como: ayuda y donación a refugio de perros, voluntariado en el hospital Bloom, limpieza de playas, etc.</p>
+                </div>
+                <div class="carta-proyectos-link">
+        
+                </div>
+                <div class="detalles-proyecto-contenido">
+                    <button class="detalles-proyecto descargar-cv">
+                        <a href="https://www.instagram.com/interact.electi/">
+                            Detalles de Proyecto 
+                        </a>
+                    </button>
+                </div>
+            </div>  <div class="carta">
+                <div class="carta-img4">    
+                </div>
+                <div class="carta-titulo">
+                    <h2>Proyecto vida</h2>
+                    <p>Integrante y miembro de la junta directiva de Proyecto Vida, participando y organizando en voluntariados de ayuda a personas con escasos recursos, limpieza de zonas verdes, donaciones de insumos, etc.</p>
+                </div>
+                <div class="carta-proyectos-link">
+
+                </div>
+                <div class="detalles-proyecto-contenido">
+                    <button class="detalles-proyecto descargar-cv">
+                        <a href="https://www.instagram.com/proyectovida.sv/">
+                            Detalles de Proyecto 
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

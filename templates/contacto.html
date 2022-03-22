@@ -1,0 +1,48 @@
+{% extends './base.html' %}
+
+{% block title %}Contactame{% endblock %}
+
+{% block contents %}
+ <link rel="stylesheet" href="./static/css/cont.css">
+
+ <div class="seccion-contacto">
+    <div class="contacto-h">
+     <h2>Contactame</h2> 
+     <div class="divider"></div> 
+    </div>
+    <div class="container-contact">
+        <img src="./css/logo.png" alt="logo personal"> 
+        <div class="contacto-form">
+            <h4>Enviame un mensaje...</h4>
+            <form class="form">
+                <input class="imput" placeholder="Nombre">
+                <input class="imput" placeholder="Email">
+                <textarea placeholder="Escribe tu mensaje aquí...">
+                </textarea>       
+                <button class="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+ </div>
+    <footer class="footer">
+        <div class="footer-contenido">
+            <h2>Dennis Perez</h2>
+            <h5>Creador </h5>
+        </div>
+        <div class="social">
+            <a href="">
+                <i class="fa-brands fa-whatsapp"></i> 
+            </a>
+            <a href="https://www.facebook.com/dennisfrancisco.perezflores/">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://github.com/DJP089">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/def_perez/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+{% endblock %}

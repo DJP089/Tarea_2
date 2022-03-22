@@ -3,57 +3,71 @@
 {% block title %}home pagge{% endblock %}
 
 {% block contents %}
-<div class="contenedor">
-    <link rel="stylesheet" href="./static/css/carru.css">				
-	<figure>
-		<img src="static/machu.jpg" alt="image01" />
-		<input type="radio" name="radio-set" checked="checked" />
-		<figcaption><span>Machu Picchu</span></figcaption>
-		
-		<figure>
-			<img src="static/lineas.jpg" alt="image02" />
+    <link rel="stylesheet" href="./static/css/home.css">				
+	<div class="container">
+  
+		<ul class="slider">
+		  <li id="slide1">
+			<img src="./static/machu.jpg"/>
+			<input type="radio" name="radio-set" checked="checked" />
+			<figcaption><span>Machu Picchu</span></figcaption>
+		  </li>
+		  <li id="slide2">
+			<img src="./static/cañon.jpg"/>
+			<input type="radio" name="radio-set" />
+			<figcaption><span>Cañon de colca</span></figcaption>
+		  </li>
+		  <li id="slidetre">
+			<img src="./static/chan.jpg"/>
+			<input type="radio" name="radio-set" />
+			<figcaption><span>Chan chan</span></figcaption>
+		  </li>
+		  <li id="slide4">
+			<img src="./static/cusco.jpg"/>
+			<input type="radio" name="radio-set" />
+			<figcaption><span>Cusco</span></figcaption>		
+		  </li>
+		  <li id="slide5">
+			<img src="./static/lineas.jpg"/>
 			<input type="radio" name="radio-set" />
 			<figcaption><span>Lineas de Nasca</span></figcaption>
-			
-			<figure>
-				<img src="static/llamas.jpg" alt="image02" />
-			    <input type="radio" name="radio-set" />
-			    <figcaption><span>Llamas</span></figcaption>
-				
-				<figure>
-					<img src="static/chan.jpg" alt="image02" />
-			        <input type="radio" name="radio-set" />
-			        <figcaption><span>Chan chan</span></figcaption>
-					
-					<figure>
-						<img src="static/cañon.jpg" alt="image02" />
-			            <input type="radio" name="radio-set" />
-			            <figcaption><span>Cañon de colca</span></figcaption>
-						
-						<figure>
-							<img src="static/salca.jpg" alt="image02" />
-			                <input type="radio" name="radio-set" />
-			                <figcaption><span>Salcantay</span></figcaption>
-				
-							<figure>
-								<img src="static/cusco.jpg" alt="image02" />
-			                    <input type="radio" name="radio-set" />
-			                    <figcaption><span>Cusco</span></figcaption>										
-
-							</figure>
-				
-						</figure>	
-							
-					</figure>	
-						
-				</figure>
-					
-			</figure>
-			
-		</figure>
+		  </li>
+		  <li id="slide6">
+			<img src="./static/llamas.jpg"/>
+			<input type="radio" name="radio-set" />
+			<figcaption><span>Llamas</span></figcaption>
+		  </li>
+		  <li id="slide7">
+			<img src="./static/salca.jpg"/>
+			<input type="radio" name="radio-set" />
+			<figcaption><span>Salcantay</span></figcaption>
+		  </li>
+		</ul>
 		
-	</figure>	
-</div>
+		<ul class="menu">
+			<li>
+			  <a href="#slide1">1</a>
+			</li>
+			<li>
+			  <a href="#slide2">2</a>
+			</li>
+			 <li>
+			  <a href="#slidetre">3</a>
+			</li>
+			<li>
+			  <a href="#slide4">4</a>
+			</li>
+			<li>
+			  <a href="#slide5">5</a>
+			</li>
+			<li>
+			  <a href="#slide6">6</a>
+			</li>
+			<li>
+			  <a href="#slide7">7</a>
+			</li>
+		  </ul>
+	  </div>
 {% endblock %}
 
 
