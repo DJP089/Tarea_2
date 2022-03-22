@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Inspiration', cursive;
 }
 
 a{
@@ -14,8 +14,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 70px;
-    background-color: rgb(255, 200, 6);
+    max-height: 85px;
+    background-color: rgb(255, 0, 88);
 }
 
 .logo{
@@ -24,30 +24,42 @@ header{
     padding: 15px 0px;
 }
 .logo-nombre{
-    font-size: 1.4m;
+    font-size: 45px;
 }
 
 .logo-img{
-    height: 50px;
-    margin-right: 15px;
+    height: 70px;
+    margin-right: 0px;
 }
 nav{
-    padding: 15px 0px;
-    margin-right: 29px;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    font-size: 18px;
 }
 
 nav a{
-    padding-left: 10px;
+    color: rgb(224, 207, 208);
+    text-decoration: none;
+    padding: 0px ;
+    font-size: 3.5em;
+    
 }
 
 nav a:hover{
-    color: white;
+    color: rgb( 19, 22, 41);
+    background-color: rgb(85, 85, 85);
+    background-size: 50vh, 10vw;
+    transition: ease-in .3s;
+    font-size: 1.9em;
+    border: none;
+    border-radius: 8px;  
 }
 
 @media (min-width: 600px){
     header{
         flex-direction: row;
-        padding: 0px px;
+        padding: 0px ;
         justify-content: space-between;
     }
 }
