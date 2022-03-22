@@ -4,21 +4,21 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/css/nav.css">
+    <link rel="stylesheet" media="all" href="./static/css/nav.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <header>
-        <a href="#" class=logo>
+        <a href="/" class=logo>
            <img src="./static/logo.png"alt="company logo" class="logo-img">
            <p class="logo-nombre">Peru</p> 
         </a>
         <nav>
-            <a href="/" class="nav-link">Inicio</a>
-            <a href="/estadisticas.html" class="nav-link">Curiosidades</a>
-            <a href="/contacto.html" class="nav-link">Contacto</a>
+            <a href="/" class="link">Inicio</a>
+            <a href="/estadisticas.html" class="link">Curiosidades</a>
+            <a href="/contacto.html" class="link">Contacto</a>
         </nav>
     </header>
     {% block contents %}{% endblock %}

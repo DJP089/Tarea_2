@@ -24,7 +24,7 @@ header{
     padding: 15px 0px;
 }
 .logo-nombre{
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .logo-img{
@@ -42,19 +42,21 @@ nav a{
     color: rgb(224, 207, 208);
     text-decoration: none;
     padding: 0px ;
-    font-size: 3.5em;
+    font-size: 3em;
     
 }
 
 nav a:hover{
-    color: rgb( 19, 22, 41);
-    background-color: rgb(85, 85, 85);
-    background-size: 50vh, 10vw;
+    color: rgb(85, 85, 85);
+    
+    
     transition: ease-in .3s;
-    font-size: 1.9em;
+    font-size: 3.5em;
     border: none;
     border-radius: 8px;  
 }
+
+
 
 @media (min-width: 600px){
     header{
