@@ -12,6 +12,7 @@ def Curiosidades():
 
 @site.route("/contacto.html")
 def contacto():
+    
     return render_template("contacto.htmL")
 
         

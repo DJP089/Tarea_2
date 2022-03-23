@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Mr+Dafoe&family=Nothing+You+Could+Do&family=Yellowtail&display=swap');
 
 
 body{
 	background-color: rgba(32,129,245);
 
-	font-family: 'Inspiration', cursive;
+    font-family: 'Nothing You Could Do', cursive;
 }
   
 .container{
@@ -106,7 +106,8 @@ ul.slider li {
 } 
 
 .slider a{
-	font-size:50px;
+	font-size:32px;
+	word-spacing: 0.01px;
 }
 
 .container input:checked + figcaption,
@@ -133,11 +134,11 @@ ul.slider li {
 }
   
   ul.slider li:first-child {
-	  opacity: 1; /*Mostramos el primer <li>*/
+	  opacity: 1; 
   }
   
   ul.slider li:target {
-	  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+	  opacity: 1; 
   }
   
   .menu{

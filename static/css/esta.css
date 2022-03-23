@@ -1,7 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Playfair+Display:ital@1&display=swap');
+
+
 
 body{
-    font-family: sans-serif; 
+
+    background-image: url(/static/img/peru.jpg);
+    font-family: 'Lora', serif;
 }
 
 .contenedor{
@@ -13,18 +17,19 @@ body{
 }
 
 .carta { 
-    width: 300px;
-    height: 590px;
-    color: aliceblue;
-    background-color: rgb(43, 135, 197);
+    width: 600px;
+    height: 700px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(148, 148, 148, 0.5);
     border-radius: 10px;
     margin: 1.5em;
 }
 
+
 .carta-img1 {
     width: 100%;
     height: 250px;
-    background-image: url(./tallePalacios.jpeg);
+    background-image: url(/static/img/eco.jpg);
     background-size: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -32,7 +37,7 @@ body{
 .carta-img2 {
     width: 100%;
     height: 250px;
-    background-image: url(./interact.jpeg);
+    background-image: url(/static/img/turi.jpg);
     background-size: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -40,24 +45,36 @@ body{
 .carta-img4 {
     width: 100%;
     height: 250px;
-    background-image: url(./proyecto-vida.jpeg);
+    background-image: url(/static/img/histo.jpg);
     background-size: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .carta-titulo {
-    padding: 20px;
+    padding: 5px;
     font-size: 1.25em;
-    margin-left: 4px;
+    
 }
+
+.carta-titulo h2{
+    font-size: 50px;
+    margin-left: 115px;
+    justify-content: center;
+}
+
+.carta-titulo p {
+    padding: 10px;
+    font-size: 22px;
+}
+
 .carta-proyectos-link{
     display: flex;
     justify-content: space-evenly;
 }
 
 .carta-proyectos-link a{ 
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 .carta-proyectos-link i{
@@ -65,9 +82,10 @@ body{
 }
 
 .carta .detalles-proyecto{
+    
     margin: 0 auto;
     margin: len;
-    width: 70%;
+    width: 30%;
 }
 
 .carta .detalles-proyecto a{
@@ -81,4 +99,25 @@ body{
     width: 100%;
     justify-content: center;
     margin-top: 1em;
+}
+
+.detalles-proyecto-contenido i{
+    font-size:100px;
+}
+.descargar-cv{
+    font-size: 1em; 
+    padding: 5px 14px;
+    background-color: rgb(85, 85, 85);
+    border: none;
+    margin-top: 2px;
+    border-radius: 10px; 
+}
+.descargar-cv:hover { 
+    font-size: 1.29em; 
+    padding: 6px 15px;
+    background-color: rgb(255, 0, 88);
+    transition: ease-in .2s;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
 }
