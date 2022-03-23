@@ -1,13 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lora:ital,wght@1,600&family=Playfair+Display:ital@1&display=swap');
+
+
+body{
+	background-color: rgb( 19, 22, 41);
+
+    font-family: 'Fjalla One', sans-serif;
+}
+
 
 .seccion-contacto {
     background-color: rgb( 19, 22, 41);
 
 }
 .contacto-h h2{
+    margin-left: 50px;
     font-size: 5em;
+    color: aliceblue;
+    margin-bottom: 4px;
+
+}
+.contacto-h h3{
+    margin-left: 140px;
+    margin-top: 0;
+    font-size: 3em;
     color: aliceblue;
 
 }
+
 
 
 .container-contact {
@@ -19,12 +38,13 @@
     width: 700px;
     height: 700px;
     bottom: 0;
+    margin-left: 190px;
     
 }
 
 .contacto-form h4{
     color: aliceblue;
-    font-size: 2.9em;
+    font-size: 3.9em;
 }
 
 .form {
@@ -56,10 +76,10 @@
     margin: 1em;
     border: none;
     text-transform: uppercase;
-    background-color: rgb(222, 50, 59);
+    background-color: rgb(255, 0, 88);
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgba(222, 50, 59,0.69);
+    box-shadow: 1px 3px 11px -5px rgb(255, 0, 88);
 }
 
 .submit:hover{
@@ -72,24 +92,25 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 200px;
-    background-color: rgb(222, 50, 59);
+    height: 250px;
+    background-color: rgb(255, 0, 88);
 }
 
 .footer-contenido h2{
     font-size: 2.9em;
+    margin-left: 180px;
 }
 .footer-contenido h5{
     
     font-size: 1.5em;
-    margin-left: 64px;
+    margin-left: 20px;
 }
 
 .social{
     display: flex;
     justify-content: space-between;
-    width: 200px;
-    margin-top: 1em;
+    width: 300px;
+    margin-top: 0.1px;
 }
 
 .social i{
