@@ -23,7 +23,7 @@ ul, li {
   
 ul.slider{
 	position: relative;
-	width: 1820px;
+	width: 1640px;
 	height: 650px;
 }
   
@@ -106,7 +106,7 @@ ul.slider li {
 } 
 
 .slider a{
-	font-size:32px;
+	font-size:29px;
 	word-spacing: 0.01px;
 }
 

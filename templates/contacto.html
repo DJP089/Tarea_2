@@ -11,18 +11,23 @@
          <h3>y dame tu feeback</h3> 
          <div class="divider"></div> 
         </div>
-        <div class="container-contact">
+        <div class="container-contact" >
             <img src="./static/personal.jpeg" alt="logo personal">
             <img src="./static/log.jpg" alt="logo personal">  
             <div class="contacto-form">
                 <h4>Enviame un mensaje...</h4>
-                <form class="form">
-                    <input class="imput" placeholder="Nombre">
-                    <input class="imput" placeholder="Email">
-                    <input class="imput" placeholder="Telefono(opcional)">
-                    <textarea placeholder="Escribe tu mensaje aquí...">
-                    </textarea>       
-                    <button class="submit">Enviar mensaje</button>
+                <form class="form" action="{{ url_for('site.mensajenuevo') }}" method="post">
+                    {{ form.hidden_tag() }}
+                    {{ form.firstname.label}}
+                    {{ form.firstname}}
+                    {{ form.lastname.label}}
+                    {{ form.lastname}}
+                    {{ form.email.label}}
+                    {{ form.email}}
+                    {{ form.message.label}}
+                    {{ form.message}}
+                    <br>
+                    {{ form.submit }}
                 </form>
             </div>
         </div>
